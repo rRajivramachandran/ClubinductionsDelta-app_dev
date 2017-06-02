@@ -1,0 +1,96 @@
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+
+    android:orientation="vertical"
+    android:id="@+id/outer"
+    android:background="#000000">
+
+    <Button
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:textColor="#ff0000"
+        android:onClick="redinc"
+        android:text="Red +"
+        android:id ="@+id/red"
+        android:fontFamily="sans-serif"
+        android:textSize="20sp"/>
+    <Button
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/red"
+        android:textColor="#00ff00"
+        android:onClick="greeninc"
+        android:text="Green +"
+        android:layout_marginRight="30dp"
+        android:id ="@+id/green"
+        android:fontFamily="sans-serif"
+        android:textSize="20sp"/>
+    <Button
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/green"
+        android:textColor="#0000ff"
+        android:text="Blue +"
+        android:onClick="blueinc"
+        android:id ="@+id/blue"
+        android:fontFamily="sans-serif"
+        android:textSize="20sp"/>
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/red"
+        android:id="@+id/redvalue"
+        android:text="0"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="sans-serif"
+        android:textColor="#ff0000"
+        android:textSize="20sp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/green"
+        android:text="0"
+        android:id="@+id/greenvalue"
+        android:layout_toRightOf="@id/redvalue"
+        android:layout_marginTop="20dp"
+        android:textColor="#00ff00"
+        android:layout_marginLeft="100dp"
+        android:fontFamily="sans-serif"
+        android:textSize="20sp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/blue"
+        android:text="0"
+        android:layout_toRightOf="@id/greenvalue"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="90dp"
+        android:id="@+id/bluevalue"
+        android:textColor="#00FF00"
+        android:fontFamily="sans-serif"
+        android:textSize="20sp"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/greenvalue"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="70dp"
+        android:text="RESET"
+        android:onClick="reset"/>
+
+
+
+</RelativeLayout>
